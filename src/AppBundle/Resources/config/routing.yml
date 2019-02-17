@@ -1,0 +1,8 @@
+app_consommation:
+    resource: "@AppBundle/Resources/config/routing/consommation.yml"
+    prefix:   /consommation
+
+app_user:
+    resource: "@AppBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+

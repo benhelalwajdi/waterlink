@@ -1,0 +1,24 @@
+consommation_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Consommation:index" }
+    methods:  GET
+
+consommation_show:
+    path:     /{idConsommation}/show
+    defaults: { _controller: "AppBundle:Consommation:show" }
+    methods:  GET
+
+consommation_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:Consommation:new" }
+    methods:  [GET, POST]
+
+consommation_edit:
+    path:     /{idConsommation}/edit
+    defaults: { _controller: "AppBundle:Consommation:edit" }
+    methods:  [GET, POST]
+
+consommation_delete:
+    path:     /{idConsommation}/delete
+    defaults: { _controller: "AppBundle:Consommation:delete" }
+    methods:  DELETE
