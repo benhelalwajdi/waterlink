@@ -1,3 +1,23 @@
 admin_homepage:
-    path:     /
+    path:   /
     defaults: { _controller: AdminBundle:Default:index }
+
+admin_editprofile:
+    path :  /edit
+    defaults :  { _controller: AdminBundle:Default:Edit}
+
+admin_publicView:
+    path : /publicView
+    defaults : { _controller: AdminBundle:Default:PublicView}
+
+admin_addCart :
+    path :  /addCart
+    defaults : { _controller: AdminBundle:Default:AddCart}
+
+admin_addCompteur :
+    path :  /addCompter
+    defaults : { _controller: AdminBundle:Default:AddMeter}
+
+admin_invoice :
+    path : /invoice
+    defaults : { _controller: AdminBundle:Default:Invoice}
