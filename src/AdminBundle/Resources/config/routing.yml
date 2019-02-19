@@ -14,8 +14,8 @@ admin_addCart :
     path :  /addCart
     defaults : { _controller: AdminBundle:Default:AddCart}
 
-admin_addCompteur :
-    path :  /addCompter
+admin_addMeter :
+    path :  /addMeter
     defaults : { _controller: AdminBundle:Default:AddMeter}
 
 admin_invoice :
