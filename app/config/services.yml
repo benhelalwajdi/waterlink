@@ -29,6 +29,9 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
+    redirect.after.login:
+        class: AppBundle\Redirection\AfterLoginRedirection
+        arguments: ["@router"]
     # add more services, or override services that need manual wiring
     # AppBundle\Service\ExampleService:
     #     arguments:
