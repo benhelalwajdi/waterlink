@@ -1,0 +1,52 @@
+{% extends 'admin/Template.html.twig' %}
+
+
+{% block main %}
+
+
+    <div class="page ">
+
+        <div class="container page__container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ path('admin_homepage') }}">Home</a></li>
+                <li class="breadcrumb-item active">Profile</li>
+            </ol>
+
+            <div class="text-center">
+                <a href="#"><img src="{{ asset('templateAdmin/assets/images/people/110/guy-8.jpg') }}" alt="" class="rounded-circle"></a>
+                <h1 class="h2 mb-0 mt-1">Adrian Demian</h1>
+                <p class="lead text-muted mb-0">Florida, USA</p>
+                <div class="badge badge-primary ">INSTRUCTOR</div>
+                <hr>
+                <h5 class="text-muted mb-1">Instructor Rating</h5>
+                <div class="rating">
+                    <i class="material-icons text-success">star</i>
+                    <i class="material-icons text-success">star</i>
+                    <i class="material-icons text-success">star</i>
+                    <i class="material-icons text-muted-light">star_border</i>
+                    <i class="material-icons text-muted-light">star_border</i>
+                </div>
+            </div>
+            <hr>
+            <h4>Statistic by Adrian</h4>
+            <div class="card-columns">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Regions selection</h4>
+                        <div id="regions-selection" data-toggle="vector-region-selection" class="vector-map-cnt"></div>
+                        <p>The following example demonstrates the feature of jVectorMap that allows selection of regions and/or markers by user or programmatically. Specific styles could be assigned for the selected items. User selection is saved between page reloads in the local storage.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container page__container">
+            <div class="footer">
+                Copyright &copy; 2016 - <a href="http://themeforest.net/item/learnplus-learning-management-application/15287372?ref=mosaicpro">Purchase LearnPlus</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
